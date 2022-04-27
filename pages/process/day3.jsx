@@ -1,4 +1,6 @@
 import * as React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 import { NotionRenderer } from 'react-notion-x'
 import { NotionAPI } from 'notion-client'
@@ -24,6 +26,6 @@ export const getStaticProps = async () => {
 export default function Day3 ({ recordMap }) {
 
   return (
-    <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
+    <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} nextImage={Image} nextLink={Link} />
   )
 }
