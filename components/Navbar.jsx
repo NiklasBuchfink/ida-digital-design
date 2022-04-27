@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Navigation() {
+export default function Navbar() {
   const navdata = [
     {
       text: "Home",
@@ -13,6 +13,10 @@ export default function Navigation() {
     {
       text: "Day 2",
       route: "/process/day2"
+    },
+    {
+      text: "Day 3",
+      route: "/process/day3"
     },
   ]
 
