@@ -18,17 +18,22 @@ export default function Day1() {
 
   return(
     <div>
-      <h1 className="mx-auto my-64 w-fit">Weg zur Viscosi</h1>
+      <h1 className="mx-auto my-32 w-fit">Weg zur Viscosi</h1>
       <div className="mx-auto w-fit">
-        <ul className="flex flex-col gap-32 text-6xl color-teal-400 my-64 uppercase">
+        <motion.ul 
+          className="flex flex-col gap-32 text-6xl color-teal-400 my-32 uppercase"
+          transition={{
+            staggerChildren: 0.5
+          }}
+        >
           <AnimatePresence exitBeforeEnter>
             {waypoints.map((point,index) =>
               <motion.li 
                 className="blur-sm duration-300 hover:blur-none"
                 key={index}
                 variants={variants}
-                initial="hidden"
-                whileInView="visible"
+                initial="visible"
+                // whileInView="visible"
                 exit="hidden"
                 transition={{
                   duration: 0.4,
@@ -39,7 +44,7 @@ export default function Day1() {
               </motion.li>
             )}
           </AnimatePresence>
-        </ul>
+        </motion.ul>
       </div>
     </div>
   )

@@ -24,9 +24,9 @@ export default function Day2() {
 
   return(
     <div>
-      <h1 className="mx-auto my-64 w-fit">Drinks of the day</h1>
+      <h1 className="mx-auto my-32 w-fit">Drinks of the day</h1>
       <div className="mx-auto w-fit">
-        <ul className="flex flex-col gap-32 text-md font-bold color-teal-400 my-64">
+        <ul className="flex flex-col gap-32 text-md font-bold color-teal-400 my-32">
           <AnimatePresence exitBeforeEnter>
             {drinks.map((item,index) =>
               <motion.li 
@@ -36,7 +36,7 @@ export default function Day2() {
                 animate={{
                   opacity: 1,
                   translateY: 0, 
-                  transition: {delay: item.time-6 }
+                  transition: {delay: item.time-3 }
                 }}
                 whileHover={{ rotate: -35}}
                 exit="hidden"

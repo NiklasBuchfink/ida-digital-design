@@ -17,8 +17,14 @@ module.exports = withBundleAnalyzer({
       'www.notion.so',
       'notion.so',
       'images.unsplash.com',
-      'pbs.twimg.com'
+      'pbs.twimg.com',
     ],
     formats: ['image/avif', 'image/webp']
   }
 })
+
+module.exports = {
+  images: {
+    domains: ['picsum.photos'],
+  },
+}

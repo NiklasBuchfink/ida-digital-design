@@ -18,6 +18,10 @@ export default function Navbar() {
       text: "Day 3",
       route: "/process/day3"
     },
+    {
+      text: "Day 4",
+      route: "/process/day4"
+    },
   ]
 
   return (

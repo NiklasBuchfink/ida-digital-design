@@ -26,6 +26,6 @@ export const getStaticProps = async () => {
 export default function Day3 ({ recordMap }) {
 
   return (
-    <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} nextImage={Image} nextLink={Link} />
+    <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={true} nextImage={Image} nextLink={Link} />
   )
 }
