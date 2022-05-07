@@ -10,4 +10,8 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html,js,ts,jsx,tsx"
+  }
 }
