@@ -22,6 +22,10 @@ export default function Navbar() {
       text: "Day 4",
       route: "/process/day4"
     },
+    {
+      text: "Workshop",
+      route: "/workshop"
+    },
   ]
 
   return (
