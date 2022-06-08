@@ -25,6 +25,9 @@ module.exports = withBundleAnalyzer({
 
 module.exports = {
   images: {
-    domains: ['picsum.photos'],
+    domains: [
+      'picsum.photos',
+      'i.scdn.co'
+    ],
   },
 }

@@ -33,7 +33,8 @@ export default function Day4() {
         <motion.ul 
           className="flex flex-row flex-wrap justify-between gap-4 text-xl color-teal-400 my-32 uppercase"
           transition={{
-            delayChildren: 0.2,
+            delayChildren: 0.4,
+            staggerDirection: 1
           }}
         >
           <AnimatePresence exitBeforeEnter>
@@ -44,12 +45,10 @@ export default function Day4() {
                 variants={variants}
                 initial="hidden"
                 whileInView="visible"
-                exit="hidden"
                 transition={{
                   duration: 0.4,
                   ease: "easeOut",
-                  delayChildren: 0.2,
-                  type: "spring"
+                  type: "spring",
                 }}
               >
                 {img}

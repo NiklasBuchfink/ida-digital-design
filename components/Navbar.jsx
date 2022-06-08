@@ -7,20 +7,20 @@ export default function Navbar() {
       route: "/"
     },
     {
-      text: "Day 1",
-      route: "/process/day1"
+      text: "Task 1",
+      route: "/process/task1"
     },
     {
-      text: "Day 2",
-      route: "/process/day2"
+      text: "Task 2",
+      route: "/process/task2"
     },
     {
-      text: "Day 3",
-      route: "/process/day3"
+      text: "Task 3",
+      route: "/process/task3"
     },
     {
-      text: "Day 4",
-      route: "/process/day4"
+      text: "Task 4",
+      route: "/process/task4"
     },
     {
       text: "Workshop",
